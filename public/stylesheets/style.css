@@ -1,0 +1,13 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: lightsteelblue;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.band-image img{
+	width: 100%;
+}
