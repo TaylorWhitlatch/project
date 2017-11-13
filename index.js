@@ -6,7 +6,7 @@ var GoogleSignIn = require('google-sign-in');
 var project = new GoogleSignIn.Project('39494722778-r47d8480i7g34t199gm26qlbb7ng5jbe.apps.googleusercontent.com	')
 
 var baseUrl = "https://api.betterdoctor.com/2016-03-01"
-const express = require('express');
+
 const http = require('http');
 const ejs = require('ejs')
 const fs = require('fs');
