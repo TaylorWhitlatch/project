@@ -24,10 +24,10 @@
 	<% for(let i = 0; i < parsedData.data.length; i++){ %>
 		<div class = "col-sm-2">
 
-	<img class="doctor-results" src = "<%=parsedData.data[i].profile.image_url%>">
+	<img class="doctor-results img-rounded" src = "<%=parsedData.data[i].profile.image_url%>">
 
-	<div class = "name"><a href = "<%=parsedData.data[i].uid%>"><%=parsedData.data[i].profile.first_name%> <%=parsedData.data[i].profile.last_name%></a>
-	</div>
+	<h4 class = "name-results"><a href = "<%=parsedData.data[i].uid%>"><%=parsedData.data[i].profile.first_name%> <%=parsedData.data[i].profile.last_name%></a>
+	</h4>
 
 
 
