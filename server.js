@@ -82,7 +82,7 @@ app.get('/:uid', (request, response)=>{
 			// console.log(drData)
 			var parsedProfile = (drProfile);
 			console.log(parsedProfile);
-			response.render('search',{
+			response.render('searchResults',{
 			parsedProfile: parsedProfile
 		
 		})
@@ -96,7 +96,7 @@ app.post('/search', (request, response) =>{
 	var zip = request.body.zip_code;
 	var per_page = request.body.per_page;
 	var insurance = request.body.insurance
-	console.log(insurance)
+	console.log()
 	console.log('got the data from form:', zip, per_page);
 	response.redirect(`/results?zip=${zip}&per_page=${per_page}`); //render will let me render any of the templates withing view engine
 })

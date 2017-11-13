@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Doctor Profile</title>
+	<head>
+	<title></title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!--JQUERY-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+
+	
+	<script type="text/javascript" src="js/scripts.js"></script>
+
+</head>
+</head>
+<body>
+
+	<div class="container">
+
+
+		
+	<div class="page-header">
+  		<h2><%=parsedProfile.data.profile.first_name%> <%=parsedProfile.data.profile.last_name%></h2>
+		</div>
+		<div class="col-sm-12">
+			<div class="col-sm-3">
+				<img class="profile" src = "<%=parsedProfile.data.profile.image_url%>">
+			</div>
+			<div class="col-sm-5">
+				<table style="width:100%">
+ 			<h3>Profile:</h3>
+
+  				 			
+
+  			<tr>
+    			<th rowspan="3">Address:</th>
+   
+    			<td ><%=parsedProfile.data.practices[0].visit_address.street%></td>
+  			</tr>
+  			<tr>
+    			<td><%=parsedProfile.data.practices[0].visit_address.city%>, <%=parsedProfile.data.practices[0].visit_address.state%> <%=parsedProfile.data.practices[0].visit_address.zip%></td>
+  			</tr>
+  			<tr>
+  			<td></td>
+			</tr>
+			<th>Phone:
+			<td><%=parsedProfile.data.practices[0].phones[0].number%></td>
+
+			</tr>
+ 	
+			
+  			<tr>
+  				<th>Specialty</th>
+  				<td><%=parsedProfile.data.specialties[0].name%></td>
+  			</tr>
+  			<tr>
+  			<th>Accepts new paitients:
+			<td><%=parsedProfile.data.practices[0].accepts_new_patients%></td>
+
+			</tr>
+  			</table>
+  			
+    <h4>Bio:</h4>
+    
+    
+    <p><%=parsedProfile.data.profile.bio%></p>
+  
+ 
+  
+
+			
+
+
+
+
+			<button class="btn btn-primary" id="change-info-btn">Add to profile</button>
+		</div>
+	</tr>
+	
+	</div>
+
+</div>
+
+</body>
+</html>

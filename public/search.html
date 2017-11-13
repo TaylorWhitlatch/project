@@ -26,14 +26,39 @@
 		<input type = "text" name = "zip_code">
 		<label>results per page</label>
 		<input type = "text" name = "per_page">
-		<select name="insurance">
+		<select name="insurance" label="insurance">
+			<option> - Insurance - </option>
                             <option value="aetna-aetnabasichmo">Aetna</option>
-                            <option value="cigna-cignahmo">Cigna</option>
-                            <option value="bluecrossblueshieldofgeorgia-bcbsgabluechoicehmo">Blue Cross</option>
-                            <option value="ibcamerihealth-amerihealthregionalprefntwkhmohmoposhix">IBC_Amerihealth</option>
+
+                            <option value="bluecrossblueshieldofgeorgia-bcbsgabluechoicehmo, 	bluecrossblueshieldofgeorgia-bcbsgabluechoiceppo">Blue Cross</option>
+                            <option value="cigna-cignahmo, cignadental-cignatotaldppo, 	cignadental-cignadentaldhmo, cigna-cignappo">Cigna</option>
+                            <option value="	coventryhealthcare-coventrysouthernhealthppo, 	coventryhealthcare-coventryonehmo, 	coventryhealthcare-coventryonehmohix">Coventry</option>
+                            <option value="ibcamerihealth-amerihealthregionalprefntwkhmohmoposhix">IBC Amerihealth</option>
                             <option value="healthnet-healthnetcommunitycarenetworkhmohix">Healthnet</option>
-                            <option value="unitedhealthcare-uhcnavigatehmo">United_Healthcare</option>
+                            <option value="humana-humanaatlantahmoxhix">Humana</option>
+                            <option value="unitedhealthcare-uhcnavigatehmo, 	unitedhealthcaredental-unitedhealthcaredentalppo, 	unitedhealthcare-uhcoptionsppo, 	unitedhealthcare-uhcchoicepluspos, 	unitedhealthcaredental-unitedhealthcaredentalppo">United Healthcare</option>
+                            <option value="medicaid-medicaid">Medicaid</option>
+                            <option value="medicare-medicare">Medicare</option>
                             </select>
+
+
+        <select name="Specialty">
+        	<option> - Specialty - </option>
+        	<option value="addiction-specialist, addiction-counselor, addiction-psychologist">Addiction</option>
+        	<option value="dermatologist">Dermatologist</option>
+        	<option value="gastroenterologist">Gastroenterologist</option>
+        	<option value="obstetrics-gynecologist">OBGYN</option>
+        	<option value="cardiologist">Cardiologist</option>
+        	<option value="neurologist">Nuerologist</option>
+        	<option value="optomotrist">Optomotrist</option>
+        	<option value="orthodontist">Orthodontist</option>
+        	<option value="pediatrican">Pediatrician</option>
+        	<option value="psycologist">Psycologist</option>
+        	<option value="psychiatrist">Psychiatrist</option>
+        </select>
+
+
+
 		<button type = "submit">Search Now!</button>
 		  		
    		 

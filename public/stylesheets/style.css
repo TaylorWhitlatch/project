@@ -11,3 +11,12 @@ a {
 .band-image img{
 	width: 100%;
 }
+
+.profile {
+	width: 200px;
+	height:  100%;
+}
+
+.doctor-results {
+	border: 1px solid black;
+}
