@@ -17,9 +17,10 @@
 
 </head>
 <body>
-	<h1>results page</h1>
-
 	
+<div class="page-header">
+  <h1>Search Results<small>- - - - -</small></h1>
+</div>
 
 <div class="container-fluid">
 	<% for(let i = 0; i < parsedData.data.length; i++){ %>
@@ -31,11 +32,21 @@
 	<h4 class = "name-results"><a href = "<%=parsedData.data[i].uid%>"><%=parsedData.data[i].profile.first_name%> <%=parsedData.data[i].profile.last_name%></a>
 	</h4>
 
-		<div>Specialty: <%=parsedData.data[i].specialties[0].name%></div>
+		<div><%=parsedData.data[i].specialties[0].name%></div>
 	</div>
 
 	<div><%=parsedData.data[i].practices[0].visit_address.city%>, <%=parsedData.data[i].practices[0].visit_address.state%></div>
 	<div><%=parsedData.data[i].practices[0].phones[0].number%>
+	<div>Accepts new paitients:
+			<% if(parsedData.data[i].practices[0].accepts_new_patients == true){ %>
+				<span>Yes</span>
+				<%}else{%>
+				<div>No</div>
+				<%}%>
+
+				
+
+			</div>
 
 
 </div>

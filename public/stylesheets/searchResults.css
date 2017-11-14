@@ -1,5 +1,7 @@
 body {
-	background-color: lightsteelblue;
+	background-image: url("../images/blueBack.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .profile {
@@ -48,4 +50,8 @@ body {
 	border-bottom: 1px solid floralwhite;
 	
 
+}
+
+.page-header {
+	color: floralwhite;
 }
