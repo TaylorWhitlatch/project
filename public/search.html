@@ -20,16 +20,17 @@
 </head>
 
 <body>
-	<div class="page-header">
+
+	<div class="page-header ">
   <h1>Doctor Search<small></small></h1>
 </div>
-	
+	<div class="container">
 	<form action = "/search" method = "post">
 		<label>Enter Zip Code</label>
 		<input type = "text" name = "zip_code">
 		<label>results per page</label>
 		<input type = "text" name = "per_page">
-		<select name="insurance" label="insurance">
+		<select name="insurance" label="insurance" class="boxes">
 			<option> - Insurance - </option>
                             <option value="aetna-aetnabasichmo">Aetna</option>
 
@@ -45,7 +46,7 @@
                             </select>
 
 
-        <select name="Specialty">
+        <select name="Specialty" class="boxes">
         	<option> - Specialty - </option>
         	<option value="addiction-specialist, addiction-counselor, addiction-psychologist">Addiction</option>
         	<option value="dermatologist">Dermatologist</option>
@@ -68,6 +69,7 @@
   		
 </div>
 	</form> 
+</div>
 
 	
 </body>

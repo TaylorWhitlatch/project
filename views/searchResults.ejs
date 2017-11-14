@@ -20,7 +20,7 @@
 </head>
 <body>
 
-	<div class="container">
+	<div class="container box">
 
 
 		
@@ -66,7 +66,13 @@
   			</tr>
   			<tr>
   			<th>Accepts new paitients:
-			<td><%=parsedProfile.data.practices[0].accepts_new_patients%></td>
+			<td><% if(parsedProfile.data.practices[0].accepts_new_patients == true){ %>
+				<div>Yes</div>
+				<%}else{%>
+				<div>No</div>
+				<%}%>
+
+				</td>
 
 			</tr>
   			</table>
@@ -74,7 +80,7 @@
     <h4>Bio:</h4>
     
     
-    <p><%=parsedProfile.data.profile.bio%></p>
+    <div class="text-justify"><%=parsedProfile.data.profile.bio%></div>
   
  
   
@@ -86,7 +92,9 @@
 
 			<button class="btn btn-primary" id="add-favorites">Add to favorites</button>
 		</div>
-	</tr>
+		
+			
+
 	
 	</div>
 

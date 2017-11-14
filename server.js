@@ -82,6 +82,7 @@ app.get('/:uid', (request, response)=>{
 			// console.log(drData)
 			var parsedProfile = (drProfile);
 			console.log(parsedProfile);
+			
 			response.render('searchResults',{
 			parsedProfile: parsedProfile
 		
